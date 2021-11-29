@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+button{
+    width: 100%;
+    border: none;
+    background-color: antiquewhite;
+    cursor: pointer;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    color: #222;
+    outline: none;
+    position: relative;
+}
+button:hover{
+    background-color: bisque;
+    transition: 1s;
+}
+button::after{
+    content: '+';
+    font-weight: 600;
+    position: absolute;
+    right: 15px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.active::after{
+    content: '-';
+}
+.desc{
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
